@@ -10,8 +10,9 @@ const Navbar = () => {
 
         <ul className="hidden h-full gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
-            <Link  href={link.href} key={link.key} />
-            {link.label}
+            <Link href={link.href} key={link.key}>
+              {link.label}
+            </Link>
           ))}
         </ul>
       </Link>
